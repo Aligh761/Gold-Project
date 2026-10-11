@@ -39,7 +39,7 @@ A simple Android demo app that displays currency exchange rates and gold prices.
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+   [git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/Aligh761/Gold-Project.git)
    ```
 
 2. Open the project in Android Studio.
