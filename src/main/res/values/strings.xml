@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gold Project</string>
+    <string name="todo">TODO</string>
+    <string name="gold_price">قیمت طلا</string>
+    <string name="arz_price">قیمت ارز</string>
+    <string name="price_gold_18">گرم طلای 18 عیار</string>
+</resources>

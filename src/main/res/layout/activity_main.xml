@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_back_gold_date"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_top_main" />
+
+    <TextView
+        android:id="@+id/persian_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        tools:text="جمعه 17 بهمن 1404"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_back_gold_date"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/image_back_gold_date"
+        app:layout_constraintTop_toTopOf="@+id/image_back_gold_date"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/milad_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        tools:text="Friday, 6 February, 2026"
+        android:textColor="@color/gray_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/persian_date"
+        app:layout_constraintStart_toStartOf="@+id/persian_date"
+        app:layout_constraintTop_toTopOf="@+id/persian_date"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/back_choose_list"
+        android:layout_width="379dp"
+        android:layout_height="80dp"
+        android:background="@drawable/background_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_back_gold_date" />
+
+    <View
+        android:id="@+id/consider_view"
+        android:layout_width="2dp"
+        android:layout_height="50dp"
+        android:background="@color/back_line"
+        app:layout_constraintBottom_toBottomOf="@+id/back_choose_list"
+        app:layout_constraintEnd_toEndOf="@+id/back_choose_list"
+        app:layout_constraintStart_toStartOf="@+id/back_choose_list"
+        app:layout_constraintTop_toBottomOf="@+id/image_back_gold_date" />
+
+    <TextView
+        android:id="@+id/gold_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gold_price"
+        android:textColor="@color/gold_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/back_choose_list"
+        app:layout_constraintTop_toBottomOf="@+id/image_back_gold_date" />
+
+    <TextView
+        android:id="@+id/price_arz_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arz_price"
+        android:textColor="@color/gray_text"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_choose_list"
+        app:layout_constraintStart_toStartOf="@+id/back_choose_list" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_list_gold"
+        android:layout_width="409dp"
+        android:layout_height="455dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consider_view" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_price"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:progress="@integer/material_motion_duration_medium_1"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview_list_gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview_list_gold"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview_list_gold" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
